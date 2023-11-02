@@ -1,0 +1,38 @@
+img {
+    width: 250px; 
+    height: 250px; 
+}
+
+
+body {
+    background-color: PowderBlue; 
+    color: black; 
+    height: 100%;
+    margin-top: 60px
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 22px;
+    background-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+    color: black;
+    padding: 0px;
+  }
+  
+
+  footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    font-weight: bold;
+    font-size: 22px;
+    background-image: linear-gradient(to right, #ff0000, #00ff00, #0000ff);
+    color: black;
+    text-align: right;
+    padding: 4px;
+  }
