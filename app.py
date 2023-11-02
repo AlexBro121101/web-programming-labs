@@ -286,4 +286,5 @@ def chess():
 
 @app.route('/lab2/example')
 def example():
-    return render_template('example.html')
+    name = 'Бодрых Александр'
+    return render_template('example.html', name=name)
