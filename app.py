@@ -312,3 +312,7 @@ def example():
 @app.route('/lab2/')
 def lab2():
     return render_template('lab2.html')
+
+@app.route('/lab2/weapon')
+def weapon():
+    return render_template ('weapon.html')

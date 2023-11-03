@@ -1,0 +1,72 @@
+{% extends "base.html" %}
+
+{% block main %}
+
+<style>
+    img {
+        width: 290px;
+        height: 180px;
+        position: relative;
+        border: 0.5px solid rgb(255, 255, 255);
+        border-radius: 6px;
+    }
+    .text {
+        width: 300px;
+        position: absolute;
+        font-size: 17px;
+        left: 310px;
+        top: 0px;
+        border-left: 0.5px solid;
+        padding-left: 5px;
+        margin-left: 5px;
+    }
+    .block {
+        position: relative;
+        padding-bottom: 25px;
+    }
+    .list1 {
+        position: absolute;
+        top: 70px;
+    }
+    .list2 {
+        position: absolute;
+        right: 370px;
+        top: 70px;
+    }
+</style>
+<div class="list1">
+    <div class="block">
+        <img src="{{url_for('static', filename='AC.jpg')}}">
+        <div class="text">
+           <i>АС «Вал» - </i> Мощный, бесшумный и надежный автомат, сконструированный отечественными инженерами в середине 80-х годов. За основу была взята снайперская винтовка «ВСС», из-за чего оба оружия имеют схожий дизайн. Конструкция АС «Вал» разборная. В ее состав входит самозарядный компактный пистолет и нож разведчика
+        </div>
+    </div>
+    <div class="block">
+        <img src="{{url_for('static', filename='Heckler.jpg')}}">
+        <div class="text">
+            <i>Heckler & Koch G36 - </i>Самый мощный автомат в мире, который появился в 1990 году и стал отличной заменой модели HK G3. Его производитель, немецкая компания Heckler & Koch, постарался создать удобное оружие, которое подойдет для быстрых военных стычек и снайперов
+        </div>
+    </div>
+    <div class="block">
+        <img src="{{url_for('static', filename='HK.jpg')}}">
+        <div class="text">
+            <i>HK416</i>  —  в процессе производства использовался высокопрочный сплав, обеспечивающий «живучесть» ствола и выдержку оружием свыше 20 тысяч выстрелов. Также модель оснащена усовершенствованным газоотводным двигателем, который избавил от перегрева автомата при длительной стрельбе очередями.
+        </div>
+    </div>
+</div>
+<div class="list2">
+    <div class="block">
+        <img src="{{url_for('static', filename='Steyr.jpg')}}">
+        <div class="text">
+            <i>Steyr AUG A3</i>  — Маленький автомат, признанный военными как универсальное и удобное оружие. Изначально предназначался для вооружения австрийских солдат. При производстве Steyr AUG A3 применили новую систему компоновки «Bull-Pap», обеспечивающую эффективную стрельбу в двух режимах – одиночном и автоматическом.
+        </div>
+    </div>
+    <div class="block">
+        <img src="{{url_for('static', filename='TAR.jpg')}}">
+        <div class="text">
+            <i>TAR 21(Тавор)</i>  — Популярная штурмовая винтовка 21 века, изготовленная фирмой Israel Weapon Industries. Поступает в массовое производство с 1993 года по нынешнее время. Разработана в качестве замены устаревшей модели Galil и стала хорошей альтернативой американскому М16. В процессе конструирования Тавор использовалась система «Bull-Pap», что и в австрийском автомате Steyr AUG A3.
+        </div>
+    </div>
+    
+
+{% endblock %}
